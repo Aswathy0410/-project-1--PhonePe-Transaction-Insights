@@ -82,5 +82,5 @@ MIT (or choose your own)
 
 ---
 
-**Author**: <Your Name>  
-**Contact**: <email or LinkedIn>
+**Author**: <Aswathy B>  
+**Contact**: <www.linkedin.com/in/aswathy-balakrishnan-38761b145>
