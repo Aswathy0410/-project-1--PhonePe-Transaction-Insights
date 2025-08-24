@@ -82,5 +82,5 @@ MIT (or choose your own)
 
 ---
 
-**Author**: <Aswathy B>  
+**Name**: <Aswathy>  
 **Contact**: <www.linkedin.com/in/aswathy-balakrishnan-38761b145>
