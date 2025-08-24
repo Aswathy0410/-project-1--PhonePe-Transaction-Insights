@@ -1,34 +1,86 @@
-PhonePe-Transaction-Insights
-This project provides data analysis and visualization of PhonePe transaction datasets to uncover insights about digital payment trends in India. It leverages Python, Pandas, Matplotlib, and Plotly to explore transaction volumes, payment modes, and geographic patterns.
+# 📊 PhonePe Transaction Insights
 
-🚀 Features
+## 📌 Project Overview
+This project analyzes **digital payment trends in India** using PhonePe Pulse–style data.  
+It extracts transactions, users, and insurance data from JSON sources (or SQL dumps), loads them into a **SQL database**, and provides **interactive insights** through a **Streamlit** dashboard.
 
-📂 Data Cleaning & Processing – Handling raw PhonePe transaction data for structured analysis.
+## 🎯 Objectives
+- Analyze and visualize aggregated payment categories
+- Create geo insights at **state/district/pincode** levels
+- Identify **top-performing** regions and categories
+- Generate **business-ready insights** (marketing, fraud, growth)
 
-📈 Exploratory Data Analysis (EDA) – Identifying trends in transaction volumes and user growth.
+## 🛠️ Tech Stack
+- **Python**: Streamlit, Pandas, Plotly, Matplotlib, NumPy
+- **Database**: MySQL (via PyMySQL/SQLAlchemy)
+- **Viz**: Plotly/Matplotlib in Streamlit
+- **Version Control**: Git & GitHub
 
-🌍 Geographic Insights – State-wise and region-wise distribution of transactions.
+## 📂 Project Structure
+```
+PhonePe-Transaction-Insights/
+│── app.py                  # Streamlit dashboard
+│── requirements.txt        # Dependencies to run the app
+│── sql/                    # (Optional) schema & useful queries
+│── docs/                   # PPT & docs (optional)
+│── README.md               # You're reading this
+│── .gitignore              # Ignore large/secret files
+│── data/                   # (Optional) raw JSON (excluded from git by default)
+```
 
-💳 Payment Mode Analysis – Breakdown of UPI, cards, wallets, and other payment methods.
+## 🗄️ Database Design (suggested)
+**Aggregated tables**: transactions, users, insurance  
+**Map tables**: map_transactions, map_users, map_insurance (state/district totals)  
+**Top tables**: top_transactions, top_users, top_insurance (states/districts/pincodes)
 
-📊 Interactive Dashboards – Visualizations built with Plotly for better storytelling.
+> Adjust the above to match your exact table names.
 
-🔍 Actionable Insights – Key takeaways on digital payment adoption patterns.
+## ⚙️ Local Setup
+1. **Clone** the repo
+   ```bash
+   git clone https://github.com/<your-username>/PhonePe-Transaction-Insights.git
+   cd PhonePe-Transaction-Insights
+   ```
 
-🛠️ Tech Stack
+2. **Install** dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Languages: Python
+3. **Configure DB** in `app.py`
+   ```python
+   # Example only – replace with your credentials
+   conn = pymysql.connect(
+       host="localhost",
+       user="root",
+       password="your_password",
+       database="phonepe"
+   )
+   ```
 
-Libraries: Pandas, NumPy, Matplotlib, Plotly, Seaborn
+4. **Run** Streamlit
+   ```bash
+   streamlit run app.py
+   ```
 
-Visualization: Interactive charts and heatmaps
+## 📊 Dashboard Highlights
+- State-wise choropleth and bars for **transaction amount/count**
+- **Top states/districts/pincodes**
+- **User adoption** trends and **brand shares**
+- **Insurance** trends and penetration
 
-Data Source: PhonePe Pulse datasets (or public transaction data)
+## 🧠 Business Use Cases
+Customer segmentation • Fraud signals • Regional targeting • Category performance • Marketing optimization • Insurance growth
 
-By ASWATHY B
+## 🚀 Results
+- End-to-end ETL → SQL → Analytics → **Interactive dashboard**
+- Clear visibility into **geography, time, and category** patterns
+- Ready **insights** for stakeholders and product teams
 
-Linkedin : www.linkedin.com/in/aswathy-balakrishnan-38761b145
+## 📜 License
+MIT (or choose your own)
 
+---
 
-
-
+**Author**: <Your Name>  
+**Contact**: <email or LinkedIn>
