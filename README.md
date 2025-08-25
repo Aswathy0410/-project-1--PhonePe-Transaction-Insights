@@ -25,7 +25,6 @@ PhonePe-Transaction-Insights/
 │── docs/                   # PPT & docs (optional)
 │── README.md               # You're reading this
 │── .gitignore              # Ignore large/secret files
-│── data/                   # (Optional) raw JSON (excluded from git by default)
 ```
 
 ## 📊 Dashboard Highlights
