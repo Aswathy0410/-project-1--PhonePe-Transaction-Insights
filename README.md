@@ -1,0 +1,55 @@
+# 📊 PhonePe Transaction Insights
+
+## 📌 Project Overview
+This project analyzes **PhonePe Pulse data** (transactions, users, and insurance).  
+It extracts JSON data → stores in MySQL → analyzes with SQL & Python → visualizes with Streamlit.
+
+## 🛠️ Tech Stack
+- Python (Streamlit, Pandas, Plotly, Matplotlib)
+- MySQL (via PyMySQL)
+- GitHub for version control
+
+## 📂 Project Structure
+```
+PhonePe-Transaction-Insights/
+│── app.py
+│── requirements.txt
+│── README.md
+│── sql/
+│── docs/
+│── data/   (optional large files, excluded from git)
+```
+
+## 🗄️ Database Schema
+### Aggregated Tables
+- aggregated_transaction(State, Year, Quater, Transaction_type, Transaction_count, Transaction_amount)
+- aggregated_insurance(State, Year, Quater, Insurance_type, Insurance_count, Insurance_amount)
+- aggregated_user(State, Year, Quater, Brands, User_count, Percentage)
+
+### Map Tables
+- map_transaction(State, Year, Quater, District, Transaction_count, Transaction_amount)
+- map_insurance(State, Year, Quater, District, Insurance_count, Insurance_amount)
+- map_user(State, Year, Quater, District, RegisteredUsers, AppOpens)
+
+### Top Tables
+- top_user(State, Year, Quater, Entity_Level, Name, Registered_Users)
+- top_transaction(...)
+- top_insurance(...)
+
+## ⚙️ Setup
+1. Clone repo  
+2. Install dependencies (`pip install -r requirements.txt`)  
+3. Configure MySQL credentials in `app.py`  
+4. Run with `streamlit run app.py`
+
+## 📊 Dashboard Features
+- Aggregated transactions by category
+- Choropleth maps for states/districts
+- Top states, districts, pincodes
+- Insurance trends over time
+- User adoption & brand shares
+
+## 🎯 Results
+- Built an end-to-end ETL + Analytics + Visualization pipeline
+- Clear state/district level insights on PhonePe adoption
+- Hands-on with **SQL + Python + Streamlit**
