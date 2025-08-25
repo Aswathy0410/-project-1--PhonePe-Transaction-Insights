@@ -46,3 +46,6 @@ PhonePe-Transaction-Insights/
 - Built an end-to-end ETL + Analytics + Visualization pipeline
 - Clear state/district level insights on PhonePe adoption
 - Hands-on with **SQL + Python + Streamlit**
+
+- **Author**: <Your Aswathy B>  
+**Contact**: <aswathybalky@gmail.com or www.linkedin.com/in/aswathy-balakrishnan-38761b145>
