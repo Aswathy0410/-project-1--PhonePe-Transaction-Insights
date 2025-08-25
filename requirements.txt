@@ -1,8 +1,0 @@
-streamlit
-pandas
-numpy
-pymysql
-sqlalchemy
-plotly
-matplotlib
-streamlit-option-menu
