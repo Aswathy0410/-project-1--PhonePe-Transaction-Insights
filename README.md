@@ -17,7 +17,6 @@ PhonePe-Transaction-Insights/
 │── README.md
 │── sql/
 │── docs/
-│── data/   (optional large files, excluded from git)
 ```
 
 ## 🗄️ Database Schema
@@ -35,12 +34,6 @@ PhonePe-Transaction-Insights/
 - top_user(State, Year, Quater, Entity_Level, Name, Registered_Users)
 - top_transaction(...)
 - top_insurance(...)
-
-## ⚙️ Setup
-1. Clone repo  
-2. Install dependencies (`pip install -r requirements.txt`)  
-3. Configure MySQL credentials in `app.py`  
-4. Run with `streamlit run app.py`
 
 ## 📊 Dashboard Features
 - Aggregated transactions by category
