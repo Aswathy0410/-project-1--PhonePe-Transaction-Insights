@@ -40,10 +40,6 @@ Customer segmentation • Fraud signals • Regional targeting • Category perf
 - End-to-end ETL → SQL → Analytics → **Interactive dashboard**
 - Clear visibility into **geography, time, and category** patterns
 - Ready **insights** for stakeholders and product teams
-
-## 📜 License
-MIT (or choose your own)
-
 ---
 
 **Name**: <your Aswathy>  
