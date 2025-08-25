@@ -28,41 +28,6 @@ PhonePe-Transaction-Insights/
 │── data/                   # (Optional) raw JSON (excluded from git by default)
 ```
 
-## 🗄️ Database Design (suggested)
-**Aggregated tables**: transactions, users, insurance  
-**Map tables**: map_transactions, map_users, map_insurance (state/district totals)  
-**Top tables**: top_transactions, top_users, top_insurance (states/districts/pincodes)
-
-> Adjust the above to match your exact table names.
-
-## ⚙️ Local Setup
-1. **Clone** the repo
-   ```bash
-   git clone https://github.com/<your-username>/PhonePe-Transaction-Insights.git
-   cd PhonePe-Transaction-Insights
-   ```
-
-2. **Install** dependencies
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configure DB** in `app.py`
-   ```python
-   # Example only – replace with your credentials
-   conn = pymysql.connect(
-       host="localhost",
-       user="root",
-       password="your_password",
-       database="phonepe"
-   )
-   ```
-
-4. **Run** Streamlit
-   ```bash
-   streamlit run app.py
-   ```
-
 ## 📊 Dashboard Highlights
 - State-wise choropleth and bars for **transaction amount/count**
 - **Top states/districts/pincodes**
