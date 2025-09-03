@@ -31,9 +31,9 @@ PhonePe-Transaction-Insights/
 - map_user(State, Year, Quater, District, RegisteredUsers, AppOpens)
 
 ### Top Tables
-- top_user(State, Year, Quater, Entity_Level, Name, Registered_Users)
 - top_transaction(State, Year, Quater, Entity_Level, Entity_Name, Transaction_count, Transaction_amount)
 - top_insurance(State, Year, Quater, Entity_Level, Entity_Name, Insurance_count, Insurance_amount)
+- top_user(State, Year, Quater, Entity_Level, Name, Registered_Users)
 
 ## 📊 Dashboard Features
 - Aggregated transactions by category
