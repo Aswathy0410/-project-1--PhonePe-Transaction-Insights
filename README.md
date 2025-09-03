@@ -47,5 +47,5 @@ PhonePe-Transaction-Insights/
 - Clear state/district level insights on PhonePe adoption
 - Hands-on with **SQL + Python + Streamlit**
 
-**Name**: <Your Aswathy B>  
+**Name**:  <Your Aswathy B>  
 **Contact**: <aswathybalky@gmail.com or www.linkedin.com/in/aswathy-balakrishnan-38761b145>
