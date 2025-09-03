@@ -32,7 +32,8 @@ PhonePe-Transaction-Insights/
 
 ### Top Tables
 - top_user(State, Year, Quater, Entity_Level, Name, Registered_Users)
-- top_transaction(...)
+- top_transaction(top_transaction(State, Year, Quater, Entity_Level, Entity_Name, Transaction_count, Transaction_amount<img width="2763" height="133" alt="image" src="https://github.com/user-attachments/assets/f84282d7-6f1a-4e32-b8d8-e468dd6d02aa" />
+)
 - top_insurance(...)
 
 ## 📊 Dashboard Features
